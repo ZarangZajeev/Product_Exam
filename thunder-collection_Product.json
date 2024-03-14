@@ -1,0 +1,249 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Product",
+    "dateExported": "2024-03-14T07:24:19.536Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "8c933069-632f-49c7-b236-e87c62696b94",
+            "name": "Products",
+            "containerId": "",
+            "created": "2024-03-14T07:21:11.726Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "f5efac50-2c31-48f4-9d90-98c07b7c7c94",
+            "name": "Order",
+            "containerId": "",
+            "created": "2024-03-14T07:21:40.585Z",
+            "sortNum": 20000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "7c620c1d-c058-4fb2-9c21-990f807843e8",
+            "colId": "118c60a0-0f73-42fa-b42c-c2331f834233",
+            "containerId": "",
+            "name": "Register user",
+            "url": "localhost:8000/api/register/",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-14T05:35:02.574Z",
+            "modified": "2024-03-14T07:05:07.871Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "aravindh"
+                    },
+                    {
+                        "name": "email",
+                        "value": "aravindh@gmail.com"
+                    },
+                    {
+                        "name": "password",
+                        "value": "Password@123"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "6d34335c-ffad-4391-9ab2-d693ddf807bc",
+            "colId": "118c60a0-0f73-42fa-b42c-c2331f834233",
+            "containerId": "8c933069-632f-49c7-b236-e87c62696b94",
+            "name": "Product add",
+            "url": "localhost:8000/api/product/",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-14T05:54:19.485Z",
+            "modified": "2024-03-14T07:00:01.948Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Token f47cc9208bbbaa9ec9ab5d53853c35b5f16b217b"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Saree"
+                    },
+                    {
+                        "name": "description",
+                        "value": "nike"
+                    },
+                    {
+                        "name": "size",
+                        "value": "40"
+                    },
+                    {
+                        "name": "color",
+                        "value": "yellow"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "9a339b17-4e74-452b-bc68-42f9377e3a27",
+            "colId": "118c60a0-0f73-42fa-b42c-c2331f834233",
+            "containerId": "f5efac50-2c31-48f4-9d90-98c07b7c7c94",
+            "name": "Add order",
+            "url": "localhost:8000/api/order/4/",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-14T06:32:52.365Z",
+            "modified": "2024-03-14T07:07:35.824Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Token 6e919ef7cd044c3526875814a2bf995ac0dde007"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "qty",
+                        "value": "7"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "d8619264-b303-4ab9-887b-cff8b445cbf0",
+            "colId": "118c60a0-0f73-42fa-b42c-c2331f834233",
+            "containerId": "",
+            "name": "Get Token",
+            "url": "localhost:8000/api/token/",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-03-14T05:48:38.173Z",
+            "modified": "2024-03-14T07:05:20.670Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "aravindh"
+                    },
+                    {
+                        "name": "password",
+                        "value": "Password@123"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "7ea9bfc5-b701-471e-9447-dd01ac1dd36d",
+            "colId": "118c60a0-0f73-42fa-b42c-c2331f834233",
+            "containerId": "8c933069-632f-49c7-b236-e87c62696b94",
+            "name": "retrieve product",
+            "url": "localhost:8000/api/product/1/",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-03-14T06:00:14.137Z",
+            "modified": "2024-03-14T06:00:51.206Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Token f47cc9208bbbaa9ec9ab5d53853c35b5f16b217b"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "4db9a87b-5b6a-42a9-92c9-a0f3ec7afbbb",
+            "colId": "118c60a0-0f73-42fa-b42c-c2331f834233",
+            "containerId": "f5efac50-2c31-48f4-9d90-98c07b7c7c94",
+            "name": "list order",
+            "url": "localhost:8000/api/allorders/",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-03-14T06:36:29.744Z",
+            "modified": "2024-03-14T07:02:55.419Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Token 5ac5133c58b770ff36c5a74422ba61a5cfaebfb6"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "0a60a2d1-98da-46b1-afdd-2072f4d4eade",
+            "colId": "118c60a0-0f73-42fa-b42c-c2331f834233",
+            "containerId": "8c933069-632f-49c7-b236-e87c62696b94",
+            "name": "product list",
+            "url": "localhost:8000/api/productread/",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-03-14T06:12:45.788Z",
+            "modified": "2024-03-14T06:14:07.253Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Token 8a3234f7e67fad9527791f5f4abd9d4e0630c4bf"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "66c1d099-7724-454c-92db-3db57177a8e8",
+            "colId": "118c60a0-0f73-42fa-b42c-c2331f834233",
+            "containerId": "f5efac50-2c31-48f4-9d90-98c07b7c7c94",
+            "name": "maximum ordered products",
+            "url": "localhost:8000/api/maxporducts/",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-03-14T07:19:18.331Z",
+            "modified": "2024-03-14T07:20:19.319Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Token 6e919ef7cd044c3526875814a2bf995ac0dde007 "
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "7ee817a4-e5c5-4027-a494-876745d9b123",
+            "colId": "118c60a0-0f73-42fa-b42c-c2331f834233",
+            "containerId": "8c933069-632f-49c7-b236-e87c62696b94",
+            "name": "all products",
+            "url": "localhost:8000/api/productread/",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-03-14T06:14:49.383Z",
+            "modified": "2024-03-14T06:15:23.774Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Token 8a3234f7e67fad9527791f5f4abd9d4e0630c4bf"
+                }
+            ],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

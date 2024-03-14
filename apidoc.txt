@@ -1,0 +1,83 @@
+1,  API for Registration
+-------------------------------
+    url     :   localhost:8000/api/register/
+    Method  :   POST
+    data    :   {
+                 "username",
+                 "email",
+                 "password",
+                }
+
+2, API API for Get TokenAuthentication
+-------------------------------
+    url     :   localhost:8000/api/token/
+    Method  :   POST
+    data    :   {
+                "username",
+                "password"
+                }
+
+3, API product add
+--------------------------
+    Autherization   : Admin only
+    url     :   localhost:8000/api/product/
+    Method  :   POST
+    data    :   {
+                "name",
+                "description",
+                "size",
+                "color"
+                }
+
+4, API for product retrieve
+-----------------------------
+    url     :   localhost:8000/api/product/{id}/
+    Method  :   GET
+    data    :   {
+                non
+                }
+
+5, API for list all products
+-----------------------------
+    url     :   localhost:8000/api/productread/
+    Method  :   GET
+    data    :   {
+                non
+                }
+
+6, API for update product
+----------------------------
+    url     :   localhost:8000/api/product/{id}/
+    Method  :   PUT
+    data    :   {
+                "name",
+                "description",
+                "size",
+                "color"
+                }
+
+7, API for delete product
+--------------------------
+    url     :   localhost:8000/api/product/{id}/
+    Method  :   DELETE
+
+8, API For add order
+--------------------
+    url     :   localhost:8000/api/order/{product_id}/
+    Method  :   POST
+    data    :   {
+                "qty"
+                }
+
+9, API fro list all ordered produucts
+----------------------
+    Autherization   : User
+    url     :   localhost:8000/api/allorders/
+    Method  :   GET
+
+10, API for most ordered products
+------------------
+    Autherization   : User
+    url     :   localhost:8000/api/maxporducts/
+    Method  :   GET
+    
